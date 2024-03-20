@@ -1,0 +1,166 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fragments.MapsFragment">
+
+    <LinearLayout
+        tools:context=".MapsActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etOrigin"
+            android:hint="@string/enter_origin_address"
+            android:inputType="" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_destination_address"
+            android:id="@+id/etDestination"
+            android:inputType="" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_distance" />
+
+            <TextView
+                android:id="@+id/tvDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="@string/_0_km" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_clock"
+                android:contentDescription="TODO" />
+            <TextView
+                android:layout_marginStart="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0_min"
+                android:id="@+id/tvDuration" />
+
+            <Button
+                android:id="@+id/btnFeedback"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="?attr/colorAccent"
+                android:text="@string/find_routes" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/map"
+            android:layout_marginTop="0dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="6dp">
+
+            <Spinner
+                android:id="@+id/layers_spinner"
+                android:layout_width="123dp"
+                android:layout_height="34dp" />
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/traffic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/traffic"
+                android:textSize="11sp" />
+
+            <CheckBox
+                android:id="@+id/my_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="@string/my_location"
+                android:textSize="11sp" />
+
+            <CheckBox
+                android:id="@+id/buildings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="@string/buildings"
+                android:textSize="11sp" />
+
+            <CheckBox
+                android:id="@+id/indoor"
+                android:layout_width="76dp"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="@string/indoor"
+                android:textSize="11sp" />
+            <!-- <CheckBox
+                android:id="@+id/traffic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onTrafficToggled"
+                android:text="@string/traffic"
+                tools:ignore="OnClick" />
+
+            <CheckBox
+                android:id="@+id/my_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:onClick="onMyLocationToggled"
+                android:text="@string/my_location"
+                tools:ignore="OnClick" />
+
+            <CheckBox
+                android:id="@+id/buildings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:onClick="onBuildingsToggled"
+                android:text="@string/buildings"
+                tools:ignore="OnClick" />
+
+            <CheckBox
+                android:id="@+id/indoor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:onClick="onIndoorToggled"
+                android:text="@string/indoor"
+                tools:ignore="OnClick" />-->
+
+        </LinearLayout>
+
+
+        <fragment
+            android:id="@+id/map"
+            class="com.google.android.gms.maps.MapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,426 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fragments.DetailsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#009688"
+            android:fontFamily="sans-serif-black"
+            android:text="DETAILS"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/thingnamectiy"
+            android:layout_below="@id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="CITY"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <TextView
+            android:id="@+id/latnlon"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/thingnamectiy"
+            android:layout_alignParentEnd="true"
+            android:background="#952196F3"
+            android:text="Fetching"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/aqi"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/latnlon"
+            android:layout_alignParentEnd="true"
+            android:background="#A8FF9800"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"
+            tools:text="Fetching" />
+
+        <TextView
+            android:id="@+id/cat"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/aqi"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="0dp"
+            android:background="#952196F3"
+            android:text="Fetching"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/pol"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/cat"
+            android:layout_alignParentEnd="true"
+            android:background="#A8FF9800"
+            android:text="Fetching"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/temp"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/pol"
+            android:background="#952196F3"
+            android:layout_alignParentEnd="true"
+            android:text="Fetching"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/hum"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/temp"
+            android:layout_alignParentEnd="true"
+            android:text="Fetching"
+            android:background="#A8FF9800"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/pm2p5"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:background="#952196F3"
+            android:layout_below="@id/hum"
+            android:layout_alignParentEnd="true"
+            android:text="Fetching"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/pm10"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/pm2p5"
+            android:background="#A8FF9800"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="0dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"
+            tools:text="Fetching" />
+
+        <TextView
+            android:id="@+id/co"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/pm10"
+            android:layout_alignParentEnd="true"
+            android:background="#952196F3"
+            android:layout_marginEnd="0dp"
+            android:text="Fetching"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/so2"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/pm10"
+            android:layout_alignParentEnd="true"
+            android:background="#A8FF9800"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="0dp"
+            android:text="Fetching"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/no2"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/so2"
+            android:layout_alignParentEnd="true"
+            android:background="#952196F3"
+            android:layout_marginEnd="0dp"
+            android:text="Fetching"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold" />
+
+        <!--<TextView
+            android:id="@+id/no"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/ozone"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="0dp"
+            android:background="#952196F3"
+            android:text="Fetching"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold" />-->
+        <TextView
+            android:id="@+id/ozone"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/no2"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="0dp"
+            android:background="#A8FF9800"
+            android:text="Fetching"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/sound"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/ozone"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="0dp"
+            android:background="#952196F3"
+            android:text="Fetching"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/latnlon1"
+            android:layout_width="200dp"
+            android:layout_height="37dp"
+            android:layout_below="@id/thingnamectiy"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="11dp"
+            android:layout_toStartOf="@+id/latnlon"
+            android:background="#85009688"
+            android:text="Location"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/aqi1"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/latnlon"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="11dp"
+            android:layout_toStartOf="@+id/aqi"
+            android:background="#3CFFC107"
+            android:text="AQI"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/cat1"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/aqi"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="11dp"
+            android:layout_toStartOf="@+id/cat"
+            android:background="#85009688"
+            android:text="Category"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/pol1"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/cat"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="11dp"
+            android:layout_toStartOf="@+id/pol"
+            android:background="#3CFFC107"
+            android:text="Pollutant"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/temp1"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/pol"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="11dp"
+            android:layout_toStartOf="@+id/temp"
+            android:background="#85009688"
+            android:text="Temperature (C)"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/hum1"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/temp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="11dp"
+            android:layout_toStartOf="@+id/hum"
+            android:background="#3CFFC107"
+            android:text="HUMIDITY (RH)"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/pm2p51"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/hum"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="11dp"
+            android:layout_toStartOf="@+id/pm2p5"
+            android:background="#85009688"
+            android:text="PM 2.5 (ug/m3)"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/pm101"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/pm2p5"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="11dp"
+            android:layout_toStartOf="@+id/pm10"
+            android:background="#3CFFC107"
+            android:text="PM 10 (ug/m3)"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/co1"
+            android:layout_width="200dp"
+            android:layout_height="37dp"
+            android:layout_below="@id/pm10"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="11dp"
+            android:layout_toStartOf="@+id/co"
+            android:background="#85009688"
+            android:text="CO (ppm)"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/so21"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/pm10"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="11dp"
+            android:layout_toStartOf="@+id/so2"
+            android:background="#3CFFC107"
+            android:text="SO (ppb)"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/no21"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/so2"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="11dp"
+            android:layout_toStartOf="@+id/no2"
+            android:background="#85009688"
+            android:text="NO2 (ppb)"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ozone1"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/no2"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="11dp"
+            android:layout_toStartOf="@+id/ozone"
+            android:background="#3CFFC107"
+            android:text="OZONE (ppb)"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold" />
+
+        <!--<TextView
+            android:id="@+id/no1"
+            android:layout_width="199dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/ozone"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="-1dp"
+            android:layout_marginEnd="12dp"
+            android:layout_toStartOf="@+id/no"
+            android:background="#85009688"
+            android:text="NO (ppb)"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold" />-->
+
+        <TextView
+            android:id="@+id/sound1"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/ozone1"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="11dp"
+            android:layout_toStartOf="@+id/sound"
+            android:background="#85009688"
+            android:text=" SOUND (dB)"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/refreshButtondetail"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/sound"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="190dp"
+            android:layout_marginTop="3dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/refresh" />
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">AQM</string>
+    <string name="title_activity_maps">AQM</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="button1">ROUTE MAP</string>
+    <string name="button2">HEAT MAP</string>
+    <string name="HomeScreenMessage">Welcome!</string>
+    <string name="HomeScreenInfo">Find Routes</string>
+    <string name="nav_header_desc">Map View</string>
+    <string name="nav_header_title">Electric Feedback</string>
+    <string name="nav_header_subtitle">Clemson ACS Lab</string>
+    <string name="action_settings">User Settings</string>
+    <string name="navigation_drawer_open">Drawer Open</string>
+    <string name="navigation_drawer_close">Drawer Close</string>
+
+    <string name="tracking_started_noto_notification_title_template">Tracking started noto: %1$s
+    </string>
+
+    <!-- TODO: remove this placeholder text -->
+    <string name="tracking_started_noto_notification_placeholder_text_template">You said %1$s and
+        lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non enim magna. Morbi dictum,
+        velit vel semper venenatis, magna odio volutpat velit, at ullamcorper nulla lacus sed
+        turpis. Pellentesque vitae metus elit, nec tincidunt tellus. Integer sed nisl sem,
+        ullamcorper ornare lacus. Duis ac mauris sed massa congue volutpat. Donec sed erat sit amet
+        turpis viverra rhoncus sit amet nec magna. Donec lacinia ligula at libero volutpat volutpat
+        nec nec tortor.
+    </string>
+
+    <string name="action_share">Share</string>
+    <string name="action_reply">Reply</string>
+    <string name="title_activity_feedback">FeedbackActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="enter_destination_address">Enter destination address</string>
+    <string name="firebase_path">location</string>
+    <string name="tracking_enabled_notif">Tracking is currently enabled. Tap to stop.</string>
+    <string name="test_email">test@test.com</string>
+    <string name="test_password">testpass</string>
+    <string name="channel_name">Background GPS Tracking</string>
+    <string name="channel_description">notification_description</string>
+    <string name="nav_menu_return_to_welcome">Return to Welcome Page</string>
+    <string name="leave_feedback">Leave Feedback</string>
+    <string name="_0_km">0 km</string>
+    <string name="_0_min">0 min</string>
+    <string name="find_routes">Find Routes</string>
+    <string name="enter_origin_address">Enter origin address</string>
+    <string name="write_optional_feedback_for_the_asc_lab">Write optional Feedback for the ASC Lab</string>
+    <string name="item">Item</string>
+    <string name="traffic">Traffic</string>
+    <string name="button_radius">Radius</string>
+    <string name="button_gradient">Gradient</string>
+    <string name="button_opacity">Opacity</string>
+    <color name="white">#FFFFFF</color>
+
+    <string name="pilani_cell_city_name">Pilani Rajasthan</string>
+    <string name="pilani_cell_city_location">GPS : (not found)</string>
+    <string name="pilani_cell_city_hum">Hum :Fetching </string>
+    <string name="pilani_cell_city_maxTemp">Temp:Fetching</string>
+    <string name="pilani_pm25">PM 2.5: Fetching</string>
+    <string name="pilani_pm10">PM 10: Fetching</string>
+    <string name="no_data" translatable="false">--</string>
+
+    <string name="delhi_cell_city_name">Naraina Delhi</string>
+    <string name="delhi_cell_city_location">GPS : (not found)</string>
+    <string name="delhi_cell_city_hum">Hum : Fetching</string>
+    <string name="delhi_cell_city_maxTemp">Temp: Fetching</string>
+    <string name="delhi_pm25">PM 2.5: Fetching</string>
+    <string name="delhi_pm10">PM 10: Fetching</string>
+
+    <string name="my_location">My Loc</string>
+    <string name="buildings">Building</string>
+    <string name="hybrid">Hybrid</string>
+    <string name="indoor">Indoor</string>
+    <string name="normal">normal</string>
+    <string name="satellite">satellite</string>
+    <string name="terrain">terrain</string>
+    <string name="none_map">non_map</string>
+    <string-array name="layers_array">
+        <item>@string/normal</item>
+        <item>@string/hybrid</item>
+        <item>@string/satellite</item>
+        <item>@string/terrain</item>
+        <item>@string/none_map</item>
+    </string-array>
+    <string name="google_maps_key">AIzaSyDmobey-Td93DNc1Cnem9GBLgFlx9qPWtk</string>
+    <!--<string name="google_maps_key">AIzaSyBrJ3ec9wTuS6L-xHkaXLU8BJbFsx_LZ9o</string>-->
+    <string name="map_not_ready">map not ready</string>
+    <string name="intelligent_data_analytics_for_air_quality_monitoring">Intelligent Data Analytics for Air Quality Monitoring</string>
+    <string name="todo">TODO</string>
+
+</resources>
