@@ -83,8 +83,8 @@
         <item>@string/terrain</item>
         <item>@string/none_map</item>
     </string-array>
-    <string name="google_maps_key">AIzaSyDmobey-Td93DNc1Cnem9GBLgFlx9qPWtk</string>
-    <!--<string name="google_maps_key">AIzaSyBrJ3ec9wTuS6L-xHkaXLU8BJbFsx_LZ9o</string>-->
+    <string name="google_maps_key">****************</string>
+    <!--<string name="google_maps_key">*************</string>-->
     <string name="map_not_ready">map not ready</string>
     <string name="intelligent_data_analytics_for_air_quality_monitoring">Intelligent Data Analytics for Air Quality Monitoring</string>
     <string name="todo">TODO</string>
